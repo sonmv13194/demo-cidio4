@@ -1,0 +1,38 @@
+
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Define -->
+	<definition name="definition" template="/view/template/template.jsp">
+		<put-attribute name="header" value="/view/template/header.jsp" />
+		<put-attribute name="nav" value="/view/template/nav.jsp" 
+			/>
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/view/template/footer.jsp" />
+	</definition>
+	<definition name="listproduct" extends="definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body" value="/view/product/index.jsp" />
+	</definition>
+
+	<definition name="product" extends="definition">
+		<put-attribute name="title" value="Postproduct" />
+		<put-attribute name="body" value="/view/product/product.jsp" />
+	</definition>
+	
+	<definition name="product" extends="definition">
+		<put-attribute name="title" value="Home Page" /> 
+		<put-attribute name="body" value="/view/product/productlocation.jsp" />
+	</definition>
+ <definition name="product" extends="definition">
+		<put-attribute name="title" value="Postproduct" />
+		<put-attribute name="body" value="/view/product/productsub.jsp" />
+	</definition>			
+<definition name="producDetailsPage" extends="definition">
+		<put-attribute name="title" value="producDetails Page" /> 
+		<put-attribute name="body" value="/view/product-detail/product-detail.jsp" />
+</definition>
+
+</tiles-definitions>
